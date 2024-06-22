@@ -32,13 +32,13 @@ const animationDelay = 0.3
     custom = {index}
     transition={{delay :  index * animationDelay}}>
 
-        <Image className='hover:scale-110'
+        <Image className='w-[75%] hover:scale-110 sm:w-[68%] md:w-[70%] xl:w-[100%] xl:mx-[20px] xl:px-[12px] sm:h-[50%] flex justify-center sm:ml-[17px]'
         src={src}
         width={width}
         height={height}
         alt='skill image' />
-        <p className='text-white font-bold flex justify-center'>{image_name}</p>
-        <p className='text-white font-bold'>Exp : {experience}</p>
+        <div className='text-white text-[7px] ml-[-13px] font-bold flex justify-center sm:text-[13px]md:text-[16px] xl:text-[20px]'>{image_name}</div>
+        <p className='text-white text-[7px] ml-[-13px] font-bold sm:text-[13px] flex justify-center md:text-[16px] xl:text-[20px]'>Exp : {experience}</p>
     </motion.div>
 
   )
